@@ -18,8 +18,6 @@ class Button {
         int height;
         int x;
         int y;
-        char* text;
-        Font style1;
       
 };
 

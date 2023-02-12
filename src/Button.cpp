@@ -6,7 +6,6 @@ Button::Button(){
 
 Button::~Button(){
 
-
 }
 
 void Button::CreateButton(int width, int height, int x, int y){
@@ -17,8 +16,6 @@ void Button::CreateButton(int width, int height, int x, int y){
 
     DrawRectangle(width, height, x, y, GRAY);
     DrawRectangleLines(width, height, x, y, BLACK);
-
-    cout << endl << endl;
     
 }
 

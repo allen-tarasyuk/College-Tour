@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
  
- const int screenWidth = 800;
+ const int screenWidth = 800 - 80; // subtract 80 to even the screen width for the button spacing
  const int screenHeight = 800;
 
 

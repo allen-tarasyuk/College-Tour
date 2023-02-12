@@ -22,7 +22,7 @@ int main(void)
         BeginDrawing();
 
             ClearBackground(WHITE);
-            DrawText("Closet College to other college locations", 150, 30, 24, BLACK);
+            DrawText("Closet College to other college locations", 130, 30, 24, BLACK);
             
             Button SaddlebackBtn;
             SaddlebackBtn.CreateButton(20, 100, 300, 70);
