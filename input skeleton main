@@ -1,0 +1,22 @@
+#include <fstream>
+#include <iostream>
+#include "School.h"
+using namespace std;
+
+int main()
+{
+ifstream inFile;
+string temp;  
+School currSchool //temp current school
+vector<School> mySchools;  //school vector
+inFile.open("Distances.csv");
+getline(inFile,temp);
+while (!inFile.eof()) {
+
+    //Input loop using class setname and price functions
+    
+    mySchools.push_back(currSchool);
+    
+}
+return 0;
+}
