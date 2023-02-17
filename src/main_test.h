@@ -1,3 +1,6 @@
+#ifndef main_test_h
+#define main_test_h
+
 /***********************************************************
  * Team Name: Team-E aka "Team-Elephant" 
  * 
@@ -19,30 +22,17 @@
  * Project Due Date: 03/15/2023
 ************************************************************/
 
+// System included libraries
+#include <iostream>
+#include <string>
+#include <vector>
+
 // User defined header files
-#include "Button.h"
+#include "School.h"
 
-// Default Constructor
-Button::Button(){
-    
-}
+using namespace std;
 
+// Function declaration prototype for main_test function which will be used to test/modify the 'School' class.
+int main_test();
 
-// Destructor
-Button::~Button(){
-
-}
-
-
-// Function to Create an instance of a Button with the specified properties.
-void Button::CreateButton(int width, int height, int x, int y, Color color){
-    this->width = width;
-    this->height = height;
-    this->x = x;
-    this->y = y;
-
-    DrawRectangle(width, height, x, y, color);
-    Rectangle tempRect = {(float)width, (float)height, (float)x, (float)y};
-    DrawRectangleLinesEx(tempRect, 4.0f, BLACK);
-}
-
+#endif

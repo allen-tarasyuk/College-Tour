@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "DARKGRAY",
+        "LIGHTGRAY"
+    ],
+    "files.associations": {
+        "*.rmd": "markdown",
+        "iostream": "cpp",
+        "vector": "cpp"
+    }
+}
