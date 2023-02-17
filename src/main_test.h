@@ -29,7 +29,6 @@
 
 // User defined header files
 #include "School.h"
-
 using namespace std;
 
 // Function declaration prototype for main_test function which will be used to test/modify the 'School' class.

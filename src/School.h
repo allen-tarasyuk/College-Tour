@@ -25,7 +25,6 @@
 // System included files
 #include <string>
 #include <iostream>
-
 using namespace std;
 
 /****************************

@@ -30,7 +30,6 @@
 
 // System included files
 #include <iostream>
-
 using namespace std;
 
 // Variables for setting the GUI window's dimensions. (Width and Height)

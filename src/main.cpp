@@ -39,8 +39,6 @@ int main(void) {
 
     SetTargetFPS(60); // Setting frames per second
 
-    
-
     // Main game loop
     while (!WindowShouldClose()){
         //---------------------------------------------------------------------------------------------
@@ -57,7 +55,6 @@ int main(void) {
             /* SADDLEBACK BUTTON & BACKGROUND COLOR LOGIC */
             /**********************************************/
             Button SaddlebackBtn;
-
             // Check if mouse cursor is within button boundary. (20, 100) -> (320, 170)
             // If mouse cursor is within button boundary the button's background color will be changed.
             if((GetMouseX() >= 20 && GetMouseX() <= 320) && (GetMouseY() >= 100 && GetMouseY() <= 170)){
@@ -71,7 +68,6 @@ int main(void) {
             /*     ASU BUTTON BACKGROUND COLOR LOGIC     */
             /*********************************************/
             Button ASU_Btn;
-            
             // Check if mouse cursor is within button boundary. (460, 100) -> (700, 170)
             // If mouse cursor is within button boundary the button's background color will be changed.
             if((GetMouseX() >= 460 && GetMouseX() <= 700) && (GetMouseY() >= 100 && GetMouseY() <= 170)){
@@ -98,7 +94,6 @@ int main(void) {
             /* CUSTOM TRIP BUTTON BACKGROUND COLOR LOGIC */
             /*********************************************/
             Button CustomTripBtn;
-            
             // Check if mouse cursor is within button boundary. (420, 200) -> (720, 270)
             // If mouse cursor is within button boundary the button's background color will be changed.
             if((GetMouseX() >= 420 && GetMouseX() <= 720) && (GetMouseY() >= 200 && GetMouseY() <= 270)){
@@ -108,14 +103,11 @@ int main(void) {
             }
             DrawText((char*)"Custom Trip", (TextLength((char*)"Custom Trip") / 2) + 475, 225, 20, WHITE);
 
-
             /* DRAW CONTENT TO BE DISPLAYED AREA ... */
             DrawRectangle(20, 300, 680, 450, LIGHTGRAY);
             DrawRectangleLines(20, 300, 680, 450, BLACK);
-            
 
         EndDrawing(); // Drawing has to be done within the BeginDrawing() and EndDrawing() functions. (Block of code to be executed with functions that draw any graphics, textures, images, etc)
-    
     
     }
 
