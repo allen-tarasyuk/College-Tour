@@ -1,5 +1,5 @@
-#ifndef main_h
-#define main_h
+#ifndef main_test_h
+#define main_test_h
 
 /***********************************************************
  * Team Name: Team-E aka "Team-Elephant" 
@@ -22,19 +22,13 @@
  * Project Due Date: 03/15/2023
 ************************************************************/
 
-// External library header files
-#include "../include/raylib.h"
-
-// User defined header files
-#include "main_test.h"
-
-// System included files
 #include <iostream>
-
+#include <string>
+#include <vector>
+#include "School.h"
 using namespace std;
 
-// Variables for setting the GUI window's dimensions. (Width and Height)
-const int screenWidth = 720;
-const int screenHeight = 800;
+// Function declaration prototype for main_test function which will be used to test/modify the 'School' class.
+int main_test();
 
 #endif
