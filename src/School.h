@@ -25,6 +25,7 @@
 // System included files
 #include <string>
 #include <iostream>
+
 using namespace std;
 
 /****************************
@@ -60,6 +61,7 @@ class School{
         string getName() const;
         string getSouvenir() const;
         double getSouvenirPrice() const;
+        
     private:
         string Name;          // Variable of type string
         string Souvenir;      // Variable of type string

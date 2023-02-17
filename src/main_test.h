@@ -22,10 +22,14 @@
  * Project Due Date: 03/15/2023
 ************************************************************/
 
+// System included libraries
 #include <iostream>
 #include <string>
 #include <vector>
+
+// User defined header files
 #include "School.h"
+
 using namespace std;
 
 // Function declaration prototype for main_test function which will be used to test/modify the 'School' class.
