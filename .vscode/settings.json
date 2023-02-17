@@ -7,5 +7,8 @@
         "*.rmd": "markdown",
         "iostream": "cpp",
         "vector": "cpp"
-    }
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
