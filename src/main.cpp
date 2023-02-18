@@ -30,10 +30,25 @@ int main(void) {
 
     // Changes being made on adam branch...
 
+    // TO PUSH TO BRANCH 'adam' ON BRANCH 'adam'
+    // git add .
+    // git commit -m "message for your commit"
+    // git push origin adam
+
+    // git branch                   -will show all the branches
+    // git branch <newBranch>       -Create's the new branch
+    // git checkout <branchWanted>  -Switches to the other branch
+
+    // example: on branch 'adam'
+    // git pull main             -To get latest code from branch main
+    // git pull <origin>         -To get latest code from branch
+    // git push origin main
+    // git push -f origin main   -To force the push to main (be careful)
+
     /***********************************************************/
     // COMMENT THIS LINE BELOW OUT TO GO STRAIGHT TO GUI WINDOW
     /*******************************************************************************************************/
-    main_test(); // Testing the 'School' class with a main_test() function at the beginning of the program.
+    //main_test(); // Testing the 'School' class with a main_test() function at the beginning of the program.
     /*******************************************************************************************************/
 
     // Initialization
