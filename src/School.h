@@ -54,7 +54,7 @@ class School{
         void setName(string Name);
         void setSouvenir(string Souvenir);
         void setSouvenirPrice(double souvenirPrice);
-        map<string, int> distances;
+        map<string, string> distances;
         /************************
         * Getters/Accessors
         *************************/
