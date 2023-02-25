@@ -1,4 +1,3 @@
-## What I have so far...
 
 ![image](https://user-images.githubusercontent.com/58355275/221332982-755746a6-2737-448d-96f7-00ab2e3fad33.png)
 
