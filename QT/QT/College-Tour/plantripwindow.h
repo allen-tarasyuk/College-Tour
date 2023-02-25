@@ -1,6 +1,7 @@
 #ifndef PLANTRIPWINDOW_H
 #define PLANTRIPWINDOW_H
 
+#include "saddlebacktripwindow.h"
 #include <QDialog>
 
 namespace Ui {
@@ -15,8 +16,13 @@ public:
     explicit planTripWindow(QWidget *parent = nullptr);
     ~planTripWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::planTripWindow *ui;
+    saddlebackTripWindow *saddlebackPlanWindow;
+
 };
 
 #endif // PLANTRIPWINDOW_H

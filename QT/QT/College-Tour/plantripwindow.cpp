@@ -12,3 +12,17 @@ planTripWindow::~planTripWindow()
 {
     delete ui;
 }
+
+void planTripWindow::on_pushButton_clicked()
+{
+
+    saddlebackPlanWindow = new saddlebackTripWindow(this);
+
+    // show window
+    saddlebackPlanWindow->show();
+    this->hide();
+
+
+
+}
+

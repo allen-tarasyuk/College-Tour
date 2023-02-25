@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -11,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Select College");
     ui->comboBox_2->addItem("Select College");
 
-    // sets data base and puts cities into comboBoxes
+    // Sets data base and puts cities into comboBoxes
     SetDataBase();
     ConnOpen();
     QSqlQuery q;
@@ -38,6 +36,7 @@ MainWindow::~MainWindow()
 }
 
 
+// Souvenir option
 void MainWindow::on_comboBox_currentIndexChanged(int index)
 {
 
@@ -47,7 +46,7 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
     QString data = "";
     while(q.next())
     {
-        data += q.value(0).toString() + ": " + q.value(1).toString() + "\n";
+        data += q.value(0).toString() + ": $" + q.value(1).toString() + "\n";
 
     }
 
@@ -59,6 +58,7 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
 }
 
 
+// Distance Option
 void MainWindow::on_comboBox_2_currentIndexChanged(int index)
 {
 
@@ -76,29 +76,12 @@ void MainWindow::on_comboBox_2_currentIndexChanged(int index)
 
     ConnClose();
 
-
-
 }
 
-
+// Opens planTripWindow
 void MainWindow::on_pushButton_clicked()
 {
-
-
-//    // Create a new instance of QGraphicsScene
-//      QGraphicsScene *newScene = new QGraphicsScene(this);
-
-//      // Set the new scene as the active scene for the QGraphicsView
-//      ui->graphicsView->setScene(newScene);
-
-
     tripWindow = new planTripWindow(this);
-
     tripWindow->show();
-
-
-
-
-
 }
 

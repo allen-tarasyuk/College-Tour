@@ -11,15 +11,23 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    plantripwindow.cpp
+    plantripwindow.cpp \
+    saddlebacktripwindow.cpp \
+    summarypage.cpp \
+    travelplan.cpp
 
 HEADERS += \
     mainwindow.h \
-    plantripwindow.h
+    plantripwindow.h \
+    saddlebacktripwindow.h \
+    summarypage.h \
+    travelplan.h
 
 FORMS += \
     mainwindow.ui \
-    plantripwindow.ui
+    plantripwindow.ui \
+    saddlebacktripwindow.ui \
+    summarypage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

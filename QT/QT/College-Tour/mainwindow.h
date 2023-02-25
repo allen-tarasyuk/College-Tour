@@ -20,7 +20,7 @@ public:
     QSqlDatabase db;
 
     void SetDataBase(){
-        // sets database path and name for the database variable
+        // Sets database path and name for the database variable
         db = QSqlDatabase::addDatabase("QSQLITE");
         QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
         qInfo() << path;
@@ -28,7 +28,7 @@ public:
     }
 
     void ConnOpen(){
-        // opens database and outputs if it opened sucessfully
+        // Opens database and outputs if it opened sucessfully
         if(db.open()){
             qDebug() << ("Connected.");
         } else {
