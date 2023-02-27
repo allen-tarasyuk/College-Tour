@@ -31,7 +31,7 @@ int main(void) {
     /***********************************************************/
     // COMMENT THIS LINE BELOW OUT TO GO STRAIGHT TO GUI WINDOW
     /*******************************************************************************************************/
-    main_test(); // Testing the 'School' class with a main_test() function at the beginning of the program.
+    //main_test(); // Testing the 'School' class with a main_test() function at the beginning of the program.
     /*******************************************************************************************************/
 
     // Initialization
