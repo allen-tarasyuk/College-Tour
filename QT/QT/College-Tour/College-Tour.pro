@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminwindow.cpp \
     arizonainput.cpp \
     arizonawindow.cpp \
     main.cpp \
@@ -20,6 +21,7 @@ SOURCES += \
     welcomewindow.cpp
 
 HEADERS += \
+    adminwindow.h \
     arizonainput.h \
     arizonawindow.h \
     mainwindow.h \
@@ -30,6 +32,7 @@ HEADERS += \
     welcomewindow.h
 
 FORMS += \
+    adminwindow.ui \
     arizonainput.ui \
     arizonawindow.ui \
     mainwindow.ui \

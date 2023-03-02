@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <mainwindow.h>
 #include <plantripwindow.h>
+#include "adminwindow.h"
 
 namespace Ui {
 class welcomeWindow;
@@ -22,10 +23,13 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_3_clicked(); //Admin pushButton
+
 private:
     Ui::welcomeWindow *ui;
     MainWindow *display;
     planTripWindow *select;
+    adminWindow *adminLogin;
 
 };
 
