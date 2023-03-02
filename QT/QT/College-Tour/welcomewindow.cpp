@@ -26,3 +26,11 @@ void welcomeWindow::on_pushButton_2_clicked()
     select->show();
 }
 
+
+void welcomeWindow::on_pushButton_3_clicked()
+{
+    //Admin push button
+    adminLogin = new adminWindow(this);
+    adminLogin->show();
+}
+
