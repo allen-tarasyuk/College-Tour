@@ -1,3 +1,6 @@
+#ifndef MainWindow_h
+#define MainWindow_h
+
 /***********************************************************
  * Team Name: Team-E aka "Team-Elephant" 
  * 
@@ -19,30 +22,34 @@
  * Project Due Date: 03/15/2023
 ************************************************************/
 
+// System included files
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
 // User defined header files
 #include "Button.h"
 
-// Default Constructor
-Button::Button(){
-    
-}
+class MainWindow {
+
+    public:
+        MainWindow();
+        ~MainWindow();
+        void HandleButtonLogic();
+        void DisplayButtons();
 
 
-// Destructor
-Button::~Button(){
-
-}
+    protected:
 
 
-// Function to Create an instance of a Button with the specified properties.
-void Button::CreateButton(int width, int height, int x, int y, Color color){
-    this->width = width;
-    this->height = height;
-    this->x = x;
-    this->y = y;
+    private:
+        Button Saddleback_Button;
+        Button UCI_Button;
+        Button ASU_Button;
+        Button Custom_Button;
 
-    DrawRectangle(width, height, x, y, color);
-    Rectangle tempRect = {(float)width, (float)height, (float)x, (float)y};
-    DrawRectangleLinesEx(tempRect, 4.0f, BLACK);
-}
+        void ChangeButtonColorsWhenHovered(Button button);
+};
 
+#endif

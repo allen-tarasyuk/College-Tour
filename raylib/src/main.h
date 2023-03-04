@@ -1,5 +1,5 @@
-#ifndef Button_h
-#define Button_h
+#ifndef main_h
+#define main_h
 
 /***********************************************************
  * Team Name: Team-E aka "Team-Elephant" 
@@ -25,36 +25,17 @@
 // External library header files
 #include "../include/raylib.h"
 
-// System included libraries
+// User defined header files
+#include "main_test.h"
+#include "Button.h"
+#include "MainWindow.h"
+
+// System included files
 #include <iostream>
 using namespace std;
 
-/****************************
- * Object/Class Button
- ***************************/
-class Button {
-    public:
-        /****************************
-        * Constructor
-        ***************************/
-        Button();
-
-        /****************************
-        * Destructor
-        ***************************/
-        ~Button();
-
-        /****************************
-        * Class Functions
-        ***************************/
-        void CreateButton(int width, int height, int x, int y, Color color);
-    
-    private:
-        int width;    // Variable used for determining the width of the button
-        int height;   // Variable used for determining the height of the button
-        int x;        // Variable used for determining the x position of the button
-        int y;        // Variable used for determining the y position of the button
-
-};
+// Variables for setting the GUI window's dimensions. (Width and Height)
+const int screenWidth = 720;
+const int screenHeight = 800;
 
 #endif
