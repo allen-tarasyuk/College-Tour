@@ -27,6 +27,8 @@
 
 // User defined header files
 #include "main_test.h"
+#include "Button.h"
+#include "MainWindow.h"
 
 // System included files
 #include <iostream>
