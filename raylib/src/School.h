@@ -25,7 +25,7 @@
 // System included files
 #include <string>
 #include <iostream>
-
+#include <map>
 using namespace std;
 
 /****************************
@@ -54,7 +54,8 @@ class School{
         void setName(string Name);
         void setSouvenir(string Souvenir);
         void setSouvenirPrice(double souvenirPrice);
-        map<string, int> distances;
+        //map<string, int> distances; // Haven't completed function in src file
+
         /************************
         * Getters/Accessors
         *************************/

@@ -27,7 +27,7 @@
 
 // System included libraries
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 /****************************
@@ -39,22 +39,51 @@ class Button {
         * Constructor
         ***************************/
         Button();
-
+        
+        /****************************
+        * Non-Default Constructor
+        ***************************/
+        Button(char *label, int width, int height, int x, int y, Color color);
+        
         /****************************
         * Destructor
         ***************************/
         ~Button();
 
         /****************************
+        * Setter/Mutator Functions
+        ***************************/
+        
+        void setLabel(char *label);
+        void setWidth(int w);
+        void setHeight(int h);
+        void setX(int x);
+        void setY(int y);
+        void setColor(Color c);
+        
+        /****************************
+        * Getter/Accessor Functions
+        ***************************/
+
+        char* getLabel() const;
+        int getWidth() const;
+        int getHeight() const;
+        int getX() const;
+        int getY() const;
+        Color getColor() const;
+
+        /****************************
         * Class Functions
         ***************************/
-        void CreateButton(int width, int height, int x, int y, Color color);
+        void CreateButton(char *label, int width, int height, int x, int y, Color color);
     
     private:
-        int width;    // Variable used for determining the width of the button
-        int height;   // Variable used for determining the height of the button
-        int x;        // Variable used for determining the x position of the button
-        int y;        // Variable used for determining the y position of the button
+        char *btnLabel;     // Variable is used for labeling the button
+        int width;          // Variable used for determining the width of the button
+        int height;         // Variable used for determining the height of the button
+        int x;              // Variable used for determining the x position of the button
+        int y;              // Variable used for determining the y position of the button
+        Color color;        // Variable used for determining the color of the button
 
 };
 
