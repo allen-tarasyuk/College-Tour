@@ -36,7 +36,7 @@ void arizonainput::on_buttonBox_accepted()
                try{
 
 
-               // if valid pass the number of cities to pariswindow
+               // if valid pass the number of colleges to pariswindow
                // and open a pariswindow
                int num = ui->lineEdit->text().toInt();
                arizonaWindow = new arizonawindow(nullptr, num);

@@ -8,6 +8,7 @@
 #include <QDialog>
 #include "saddlebacktripwindow.h"
 #include "arizonainput.h"
+#include "custominput.h"
 
 namespace Ui {
 class planTripWindow;
@@ -64,10 +65,15 @@ private slots:
 
        void on_pushButton_3_clicked();
 
+       void on_pushButton_2_clicked();
+
 private:
     Ui::planTripWindow *ui;
     saddlebackTripWindow *saddlebackPlanWindow;
     arizonainput *arizonaInput;
+     custominput *customInput;
+
+
 };
 
 #endif // PLANTRIPWINDOW_H

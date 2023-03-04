@@ -12,6 +12,8 @@ SOURCES += \
     adminwindow.cpp \
     arizonainput.cpp \
     arizonawindow.cpp \
+    custominput.cpp \
+    customwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     plantripwindow.cpp \
@@ -24,6 +26,8 @@ HEADERS += \
     adminwindow.h \
     arizonainput.h \
     arizonawindow.h \
+    custominput.h \
+    customwindow.h \
     mainwindow.h \
     plantripwindow.h \
     saddlebacktripwindow.h \
@@ -35,6 +39,8 @@ FORMS += \
     adminwindow.ui \
     arizonainput.ui \
     arizonawindow.ui \
+    custominput.ui \
+    customwindow.ui \
     mainwindow.ui \
     plantripwindow.ui \
     saddlebacktripwindow.ui \

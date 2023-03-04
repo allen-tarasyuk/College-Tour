@@ -50,3 +50,14 @@ void planTripWindow::on_pushButton_3_clicked()
 
 }
 
+
+void planTripWindow::on_pushButton_2_clicked()
+{
+    // if plan clicked creates input window
+    customInput = new custominput();
+
+    // show window
+    customInput->show();
+    this->close();
+}
+
