@@ -45,6 +45,18 @@ class Button {
         ***************************/
         ~Button();
 
+        void setWidth(int w);
+        void setHeight(int h);
+        void setX(int x);
+        void setY(int y);
+        void setColor(Color c);
+        
+        int getWidth() const;
+        int getHeight() const;
+        int getX() const;
+        int getY() const;
+        int getY() const;
+
         /****************************
         * Class Functions
         ***************************/
@@ -55,6 +67,7 @@ class Button {
         int height;   // Variable used for determining the height of the button
         int x;        // Variable used for determining the x position of the button
         int y;        // Variable used for determining the y position of the button
+        Color color;  // Variable used for determining the color of the button
 
 };
 
