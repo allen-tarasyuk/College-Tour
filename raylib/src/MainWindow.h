@@ -1,5 +1,5 @@
-#ifndef main_h
-#define main_h
+#ifndef MainWindow_h
+#define MainWindow_h
 
 /***********************************************************
  * Team Name: Team-E aka "Team-Elephant" 
@@ -22,20 +22,34 @@
  * Project Due Date: 03/15/2023
 ************************************************************/
 
-// External library header files
-#include "../include/raylib.h"
-
-// User defined header files
-#include "main_test.h"
-#include "Button.h"
-#include "MainWindow.h"
-
 // System included files
 #include <iostream>
+#include <iomanip>
+#include <string>
 using namespace std;
 
-// Variables for setting the GUI window's dimensions. (Width and Height)
-const int screenWidth = 720;
-const int screenHeight = 800;
+// User defined header files
+#include "Button.h"
+
+class MainWindow {
+
+    public:
+        MainWindow();
+        ~MainWindow();
+        void HandleButtonLogic();
+        void DisplayButtons();
+
+
+    protected:
+
+
+    private:
+        Button Saddleback_Button;
+        Button UCI_Button;
+        Button ASU_Button;
+        Button Custom_Button;
+
+        void ChangeButtonColorsWhenHovered(Button button);
+};
 
 #endif
