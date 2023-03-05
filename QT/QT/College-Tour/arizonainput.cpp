@@ -20,7 +20,7 @@ void arizonainput::on_buttonBox_accepted()
 
     if(NumCheck(ui->lineEdit->text()))
        {
-           // if valid but expecting data to be inserted
+           // If valid but expecting data to be inserted
            // tell user data isn't inserted
            int num = ui->lineEdit->text().toInt();
 
@@ -31,27 +31,12 @@ void arizonainput::on_buttonBox_accepted()
            }
            else
            {
-
-
-               try{
-
-
-               // if valid pass the number of colleges to pariswindow
-               // and open a pariswindow
+               // If valid pass the number of colleges to arizonawindow
+               // and open a arizonawindow
                int num = ui->lineEdit->text().toInt();
                arizonaWindow = new arizonawindow(nullptr, num);
                arizonaWindow->show();
                tripWindow->close();
-
-               }catch(const std::exception& e){
-                    QMessageBox::critical(nullptr, "Error", QString::fromStdString(e.what()));
-               }
-
-
-
-
-
-
            }
 
        }
@@ -59,11 +44,6 @@ void arizonainput::on_buttonBox_accepted()
        {
            QMessageBox::warning(this, "Error", "Invalid input.");
        }
-
-
-
-
-
 
 
 }

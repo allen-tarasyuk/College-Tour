@@ -19,29 +19,17 @@ void planTripWindow::on_pushButton_clicked()
 {
     saddlebackPlanWindow = new saddlebackTripWindow(this);
 
-    // show window
+    // Show window
     saddlebackPlanWindow->show();
     this->hide();
 
 }
 
 
-
-//void planTripWindow::on_pushButton_3_clicked()
-//{
-//    // if plan clicked creates input window
-//    arizonaInput = new arizonainput(this);
-
-//    // show window
-//    arizonaInput->show();
-
-//}
-
-
 void planTripWindow::on_pushButton_3_clicked()
 {
 
-    // if plan clicked creates input window
+    // If plan clicked creates input window
      arizonaInput = new arizonainput(this);
 
      // show window
@@ -53,10 +41,10 @@ void planTripWindow::on_pushButton_3_clicked()
 
 void planTripWindow::on_pushButton_2_clicked()
 {
-    // if plan clicked creates input window
+    // If plan clicked creates input window
     customInput = new custominput();
 
-    // show window
+    // Show window
     customInput->show();
     this->close();
 }

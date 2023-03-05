@@ -14,7 +14,7 @@ custominput::custominput(QWidget *parent) :
        ui->comboBox_2->setEnabled(false);
        ui->comboBox_2->addItem("Select College");
 
-       // sets database and display all colleges and adds them to the comboBox
+       // Sets database and display all colleges and adds them to the comboBox
        SetDataBase();
        ConnOpen();
        QSqlQuery q;
@@ -30,7 +30,7 @@ custominput::custominput(QWidget *parent) :
            name = q.value(0).toString();
        }
 
-       // sets text for the custom trip log ui
+       // Sets text for the custom trip log ui
        QFont font = ui->label->font();
        font.setPointSize(12);
        ui->textBrowser->setFont(font);
@@ -61,7 +61,7 @@ void custominput::on_pushButton_clicked()
 void custominput::on_pushButton_2_clicked()
 {
 
-       // closes the window
+       // Closes the window
        this->close();
 
 }
@@ -88,25 +88,25 @@ void custominput::on_pushButton_3_clicked()
 
 void custominput::on_comboBox_currentIndexChanged(int index)
 {
-        // select starting college
+        // Select starting college
         // once starting college is selected disable the option to select a starting college
         // and enable the option to select another college
         ui->comboBox->setEnabled(false);
         ui->comboBox_2->setEnabled(true);
 
-        // adds the city to the trip log ui
+        // Adds the college to the trip log ui
         QString college = ui->comboBox->currentText();
         qDebug() << college;
 
         ui->textBrowser->setText(ui->textBrowser->toPlainText() + college + "\n\nNext College:\n");
 
-        // adds the college to the vector of colleges
+        // Adds the college to the vector of colleges
         if(college != "Select College")
         {
             college.push_back(college);
         }
 
-        // adds remaining colleges to the new comboBox
+        // Adds remaining colleges to the new comboBox
         ConnOpen();
         QSqlQuery q;
         q.exec("SELECT * FROM souvenirs WHERE NOT College = \'" + ui->comboBox->currentText() + "\'ORDER BY College ASC");

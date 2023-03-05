@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
        ui->comboBox->addItem("Select College");
        ui->comboBox_2->addItem("Select College");
 
-       // Sets data base and puts cities into comboBoxes
+       // Sets data base and puts colleges into comboBoxes
        SetDataBase();
        ConnOpen();
        QSqlQuery q;

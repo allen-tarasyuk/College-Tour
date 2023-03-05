@@ -16,7 +16,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
     // Base Case
     if(colleges.size() < size)
     {
-        // opens database
+        // Opens database
         db.open();
         std::list<QString> End;
         QSqlQuery q;
@@ -50,7 +50,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
         else
         {
             // Default sql statement
-            string = "SELECT DISTINCT Ending_Collge FROM Distances WHERE Starting_City = \'" + college + "\' ORDER BY Distance ASC";
+            string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\' ORDER BY Distance ASC";
         }
         q.exec(string);
 

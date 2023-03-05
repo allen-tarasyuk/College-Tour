@@ -1,5 +1,6 @@
 #include "arizonawindow.h"
 #include "ui_arizonawindow.h"
+#include <QMessageBox>
 
 arizonawindow::arizonawindow(QWidget *parent, int numColleges) :
     QMainWindow(parent),
@@ -54,18 +55,21 @@ arizonawindow::arizonawindow(QWidget *parent, int numColleges) :
         // Finds the closest colleges recursively
         arizona->visitedColleges.push_back(arizona->currentCollege);
         qDebug() << colleges;
+
+
+
+try{
+
         arizona->FindClosestCollege(arizona->currentCollege, arizona->visitedColleges, colleges);
+
+}catch(const std::exception& e){
+     QMessageBox::critical(nullptr, "Error", QString::fromStdString(e.what()));
+}
+
         arizona->collegeReceipt.cost = 0;
 
         // Displays the colleges receipt
         DisplayReceipt();
-
-
-
-
-
-
-
 }
 
 arizonawindow::~arizonawindow()

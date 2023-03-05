@@ -66,8 +66,17 @@ public:
     explicit customwindow(QWidget *parent = nullptr, const vector<QString> &collegesVec = vector<QString>());
     ~customwindow();
 
+private slots:
+        void on_pushButton_clicked();
+
+        void on_pushButton_2_clicked();
+
 private:
     Ui::customwindow *ui;
+    TravelPlan *custom;
+    summarypage *summaryWindow;
+    TravelPlan::Receipt cityReceipt;
+    vector<QString> colleges;
 
 
 
