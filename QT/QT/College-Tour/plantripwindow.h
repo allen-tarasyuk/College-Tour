@@ -9,6 +9,7 @@
 #include "saddlebacktripwindow.h"
 #include "arizonainput.h"
 #include "custominput.h"
+#include "irvinewindow.h"
 
 namespace Ui {
 class planTripWindow;
@@ -67,9 +68,12 @@ private slots:
 
        void on_pushButton_2_clicked();
 
+       void on_pushButton_4_clicked();
+
 private:
     Ui::planTripWindow *ui;
     saddlebackTripWindow *saddlebackPlanWindow;
+    irvinewindow *irvinePlanWindow;
     arizonainput *arizonaInput;
      custominput *customInput;
 

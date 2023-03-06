@@ -13,6 +13,9 @@ planTripWindow::~planTripWindow()
     delete ui;
     delete saddlebackPlanWindow;
     delete arizonaInput;
+    delete irvinePlanWindow;
+    delete customInput;
+
 }
 
 void planTripWindow::on_pushButton_clicked()
@@ -47,5 +50,16 @@ void planTripWindow::on_pushButton_2_clicked()
     // Show window
     customInput->show();
     this->close();
+}
+
+
+void planTripWindow::on_pushButton_4_clicked()
+{
+
+irvinePlanWindow = new irvinewindow;
+
+irvinePlanWindow->show();
+this->close();
+
 }
 

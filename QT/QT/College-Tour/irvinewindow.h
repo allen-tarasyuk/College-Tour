@@ -1,18 +1,19 @@
-#ifndef CUSTOMWINDOW_H
-#define CUSTOMWINDOW_H
+#ifndef IRVINEWINDOW_H
+#define IRVINEWINDOW_H
 
 #include <QMainWindow>
-#include "saddlebacktripwindow.h"
+#include <saddlebacktripwindow.h>
 
 namespace Ui {
-class customwindow;
+class irvinewindow;
 }
 
-class customwindow : public QMainWindow
+class irvinewindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
+
 
     /// holds the database for the program
         QSqlDatabase db;
@@ -25,7 +26,7 @@ public:
         {
             // sets database path and name for the database variable
             db = QSqlDatabase::addDatabase("QSQLITE");
-            QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+            QString path = "/Users/allentarasyuk/Desktop/Project-1-European-Trip-Planner-QT/QT/Cities.sqlite3";
             qInfo() << path;
             db.setDatabaseName(path);
 
@@ -59,26 +60,28 @@ public:
         /// purchased at the current college
         void DisplayReceipt();
 
+    explicit irvinewindow(QWidget *parent = nullptr);
+    ~irvinewindow();
 
 
-    explicit customwindow(QWidget *parent = nullptr, const vector<QString> &collegesVec = vector<QString>());
-    ~customwindow();
+
+
+
+
+
+
+
 
 private slots:
-        void on_pushButton_clicked();
+    void on_pushButton_clicked();
 
-        void on_pushButton_2_clicked();
+    void on_pushButton_2_clicked();
 
 private:
-    Ui::customwindow *ui;
-    TravelPlan *custom;
+    Ui::irvinewindow *ui;
+    TravelPlan *irvine;
     summarypage *summaryWindow;
     TravelPlan::Receipt collegeReceipt;
-    vector<QString> colleges;
-
-
-
-
 };
 
-#endif // CUSTOMWINDOW_H
+#endif // IRVINEWINDOW_H

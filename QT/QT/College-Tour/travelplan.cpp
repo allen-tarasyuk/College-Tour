@@ -40,7 +40,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
             }
             else
             {
-                // If Saddleback excluded the added cities from the sql statement
+                // If Saddleback excluded the added college from the sql statement
                 string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\'"
                         + "AND NOT ENDING_COLLEGE = 'California State University, Fullerton' AND NOT ENDING_COLLEGE = 'University of Texas' ORDER BY Distance ASC";
             }

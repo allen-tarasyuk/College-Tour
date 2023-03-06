@@ -32,7 +32,7 @@ customwindow::customwindow(QWidget *parent, const vector<QString> &collegesVec) 
 
        // Outputs the Souvenir items of the college and adds them to the comboBox
        QSqlQuery q;
-       q.exec("SELECT Souvenir, Cost FROM souvenirs WHERE College = \'" + custom->currentCollege + "\'");
+       q.exec("SELECT souvenir, Cost FROM souvenirs WHERE College = \'" + custom->currentCollege + "\'");
        QString data = "";
        QString dataCombo = "";
        while(q.next())

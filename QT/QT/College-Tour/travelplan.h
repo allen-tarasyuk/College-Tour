@@ -16,8 +16,8 @@ private:
     /// Compare Colleges
     ///
     /// Checks if two city strings are the same
-    /// @param college1 first city name
-    /// @param college2 second city name
+    /// @param college1 first college name
+    /// @param college2 second college name
     /// @returns if they are the same or not
     bool Compare(const QString& college1, const QString& college2);
 
@@ -77,7 +77,7 @@ public:
     ///
     /// This method recursively finds the closest college
     /// @param college college to find closest college to
-    /// @param cities vector of cities that will be visisted
+    /// @param colleges vector of colleges that will be visited
     /// @param size amount of colleges wanting to visit
     /// @param Saddleback if the method is being used for the initial Saddleback plan
     /// @param custom if the method is being used for the custom plan
