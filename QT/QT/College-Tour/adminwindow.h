@@ -2,6 +2,7 @@
 #define ADMINWINDOW_H
 
 #include <QMainWindow>
+#include <adminselectwindow.h>
 
 namespace Ui {
 class adminWindow;
@@ -20,6 +21,7 @@ private slots:
 
 private:
     Ui::adminWindow *ui;
+    adminSelectWindow *adminSelect;
 };
 
 #endif // ADMINWINDOW_H

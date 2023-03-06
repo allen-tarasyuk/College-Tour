@@ -22,7 +22,11 @@ void adminWindow::on_pushButton_login_clicked()
     QString password = ui->lineEdit_password->text();
 
     if (password == "123") {
-        QMessageBox::information(this, "Login", "Password is correct");
+        //QMessageBox::information(this, "Login", "Password is correct");
+
+        //Show the adminSelectWindow if the password is correct.
+        adminSelect = new adminSelectWindow(this);
+        adminSelect->show();
     }
     else {
         QMessageBox::warning(this, "Login", "Password is incorrect");
