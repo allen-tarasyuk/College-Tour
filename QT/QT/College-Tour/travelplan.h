@@ -35,19 +35,16 @@ public:
     /// Number of colleges in this plan.
     int collegeCount;
 
-public:
-
-
     /// Receipt struct
     ///
     /// Holds the items needed to display the receipt
     struct Receipt
     {
         /// Cost of each purchased item. Order synced with itemsBought
-        std::vector<double> costOfItems;
+        vector<double> costOfItems;
 
         /// Name of each purchased item. Order synced with costOfItems
-        std::vector<QString> itemsBought;
+        vector<QString> itemsBought;
 
         /// Total travel expenses
         double cost;

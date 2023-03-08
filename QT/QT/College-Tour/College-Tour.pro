@@ -12,6 +12,7 @@ SOURCES += \
     adminwindow.cpp \
     arizonainput.cpp \
     arizonawindow.cpp \
+    env.cpp \
     main.cpp \
     mainwindow.cpp \
     plantripwindow.cpp \
@@ -24,6 +25,7 @@ HEADERS += \
     adminwindow.h \
     arizonainput.h \
     arizonawindow.h \
+    env.h \
     mainwindow.h \
     plantripwindow.h \
     saddlebacktripwindow.h \

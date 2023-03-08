@@ -10,6 +10,8 @@
 #include "summarypage.h"
 #include "travelplan.h"
 
+#include "env.h"
+
 namespace Ui {
 class arizonawindow;
 }
@@ -20,13 +22,15 @@ class arizonawindow : public QMainWindow
 
 public:
 
+    env env_variables;
+
     QSqlDatabase db;
 
        void SetDataBase()
        {
            // sets database path and name for the database variable
            db = QSqlDatabase::addDatabase("QSQLITE");
-           QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+           QString path = env_variables.getDatabasePath();
            qInfo() << path;
            db.setDatabaseName(path);
        }

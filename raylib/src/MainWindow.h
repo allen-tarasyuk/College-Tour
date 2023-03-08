@@ -1,14 +1,17 @@
 #ifndef MainWindow_h
 #define MainWindow_h
 
+// External library header files
+#include "../include/raylib.h"
+
+// User defined header files
+#include "Button.h"
+
 // System included files
 #include <iostream>
 #include <iomanip>
 #include <string>
 using namespace std;
-
-// User defined header files
-#include "Button.h"
 
 class MainWindow {
 
@@ -16,6 +19,7 @@ class MainWindow {
         MainWindow();
         ~MainWindow();
         void HandleButtonLogic();
+        void DisplayButtons();
 
 
     protected:

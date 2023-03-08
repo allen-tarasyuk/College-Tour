@@ -27,10 +27,10 @@
 //------------------------------------------------------------------------------------
 int main(void) {
 
-    MainWindow window;
-
     // Initialization
     InitWindow(screenWidth, screenHeight, "Application - Closest College to the current college's location");
+
+    MainWindow window;
 
     SetTargetFPS(60); // Setting frames per second
 

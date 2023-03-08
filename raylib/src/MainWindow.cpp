@@ -64,4 +64,6 @@ void MainWindow::HandleButtonLogic(){
     ChangeButtonColorsWhenHovered(this->ASU_Button);
     ChangeButtonColorsWhenHovered(this->UCI_Button);
     ChangeButtonColorsWhenHovered(this->Custom_Button);
+
+    DrawRectangle(this->Saddleback_Button.x, this->Saddleback_button.y, this->Saddleback_button.width, this->Saddleback_button.height,this->Saddleback_button.color);
 }
