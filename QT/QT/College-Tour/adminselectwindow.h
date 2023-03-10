@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class adminSelectWindow;
@@ -51,6 +52,10 @@ private slots:
     void on_comboBox_school_currentIndexChanged(int index);
 
     void on_comboBox_souvenir_currentIndexChanged(int index);
+
+    void on_pushButton_souvenirEDIT_clicked();
+
+    void on_pushButton_schoolADD_clicked();
 
 private:
     Ui::adminSelectWindow *ui;
