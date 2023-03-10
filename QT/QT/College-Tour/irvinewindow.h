@@ -26,7 +26,7 @@ public:
         {
             // sets database path and name for the database variable
             db = QSqlDatabase::addDatabase("QSQLITE");
-            QString path = "/Users/allentarasyuk/Desktop/Project-1-European-Trip-Planner-QT/QT/Cities.sqlite3";
+            QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
             qInfo() << path;
             db.setDatabaseName(path);
 

@@ -4,6 +4,7 @@
 #include <list>
 #include <QString>
 #include <QSqlQuery>
+#include <QMessageBox>
 
 using namespace std;
 
@@ -13,6 +14,9 @@ TravelPlan::~TravelPlan()
 {}
 void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString> &colleges, int size, bool saddleback, bool custom, vector<QString> customColleges)
 {
+
+
+
     // Base Case
     if(colleges.size() < size)
     {
@@ -52,7 +56,15 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
             // Default sql statement
             string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\' ORDER BY Distance ASC";
         }
+
+
+
         q.exec(string);
+
+
+
+
+
 
         // Get first closest college from current college and add it to list
         while(q.next())
@@ -60,7 +72,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
             End.push_back(q.value(0).toString());
         }
 
-        // Check if the college has been visisted
+        // Check if the college has been visited
         for(; !CheckIfCollegeVisited(End.front(), colleges); End.pop_front());
 
         // Add to the vector if it hasn't
