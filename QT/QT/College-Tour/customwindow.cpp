@@ -35,6 +35,7 @@ customwindow::customwindow(QWidget *parent, const vector<QString> &collegesVec) 
        q.exec("SELECT souvenir, Cost FROM souvenirs WHERE College = \'" + custom->currentCollege + "\'");
        QString data = "";
        QString dataCombo = "";
+
        while(q.next())
        {
            dataCombo = q.value(0).toString();

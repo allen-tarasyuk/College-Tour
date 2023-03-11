@@ -103,7 +103,7 @@ void custominput::on_comboBox_currentIndexChanged(int index)
         // Adds the college to the vector of colleges
         if(college != "Select College")
         {
-            college.push_back(college);
+            colleges.push_back(college);
         }
 
         // Adds remaining colleges to the new comboBox
