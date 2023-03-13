@@ -38,10 +38,10 @@ public:
         db = QSqlDatabase::addDatabase("QSQLITE");
 
         // Allen's db file path
-        QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+//        QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
 
         //Adam's db file path
-//        QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+        QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
         qInfo() << path;
         db.setDatabaseName(path);
     }
@@ -80,11 +80,15 @@ public:
 private slots:
     void on_comboBox_school_currentIndexChanged(int index);
 
-    void on_comboBox_souvenir_currentIndexChanged(int index);
+    void on_comboBox_schoolSouvenir_currentIndexChanged(int index);
 
     void on_pushButton_souvenirEDIT_clicked();
 
     void on_pushButton_schoolADD_clicked();
+
+    void on_pushButton_souvenirRM_clicked();
+
+    void on_pushButton_souvenirADD_clicked();
 
 private:
     Ui::adminSelectWindow *ui;
