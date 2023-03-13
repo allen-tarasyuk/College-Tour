@@ -8,6 +8,10 @@ namespace Ui {
 class adminWindow;
 }
 
+/// adminWindow
+///
+/// Prompts the user to enter a password to access
+/// the adminstrator page
 class adminWindow : public QMainWindow
 {
     Q_OBJECT

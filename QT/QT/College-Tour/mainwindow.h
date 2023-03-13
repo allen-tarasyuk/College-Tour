@@ -12,24 +12,44 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+
+/// MainWindow
+///
+/// Main window displays the souvenirs and distances
+///
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
 
-
+    /// Holds the database for the program
     QSqlDatabase db;
 
+
+        /// Sets database
+        ///
+        /// This method gets a path from the administrator and looks for the database
+        /// in that given path and sets the database variable to that database
+
         void SetDataBase(){
+
             // Sets database path and name for the database variable
             db = QSqlDatabase::addDatabase("QSQLITE");
-           QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+            // Allen's db file path
+            QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+
           //  QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";   //Adam's db file path
             qInfo() << path;
             db.setDatabaseName(path);
         }
 
+        /// Opens database
+        ///
+        /// Calls database method to open database and returns to console
+        /// if opened properly
         void ConnOpen(){
             // Opens database and outputs if it opened sucessfully
             if(db.open()){
@@ -39,12 +59,13 @@ public:
             }
         }
 
+        /// Closes database
+        ///
+        /// Calls databse method to close database
+
         void ConnClose() {
             db.close();
         }
-
-
-
 
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -55,6 +76,8 @@ private slots:
     void on_comboBox_2_currentIndexChanged(int index);
 
     void on_pushButton_clicked();
+
+//    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -11,7 +11,7 @@ class summarypage;
 
 /// summaryPage class
 ///
-/// takes the summary at the end of a travel plan
+/// Takes the summary at the end of a travel plan
 /// and sets up and displays all the data to the ui
 
 class summarypage : public QDialog

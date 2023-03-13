@@ -9,6 +9,11 @@ namespace Ui {
 class arizonainput;
 }
 
+/// arizonaInput class
+///
+/// Gets the number of colleges the user wants to visit
+/// in the Paris plan
+
 class arizonainput : public QDialog
 {
     Q_OBJECT
@@ -19,7 +24,7 @@ public:
 
 
 
-        /// Checks input
+       /// Checks input
        ///
        /// This method takes a num string and checks to see if the input is a number
        /// @param num String num to check if a valid number

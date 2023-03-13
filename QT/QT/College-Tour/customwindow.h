@@ -8,13 +8,18 @@ namespace Ui {
 class customwindow;
 }
 
+
+/// customWindow
+///
+/// Goes through the custom trip plan
+
 class customwindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
 
-    /// holds the database for the program
+        /// holds the database for the program
         QSqlDatabase db;
 
         /// Sets database
@@ -23,9 +28,12 @@ public:
         /// in that given path and sets the database variable to that database
         void SetDataBase()
         {
-            // sets database path and name for the database variable
+            // Sets database path and name for the database variable
             db = QSqlDatabase::addDatabase("QSQLITE");
-            QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+            // Allen's db file path
+            QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+
 //            QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";   //Adam's db file path
             qInfo() << path;
             db.setDatabaseName(path);
@@ -60,7 +68,9 @@ public:
         /// purchased at the current college
         void DisplayReceipt();
 
-
+        /// Constructor
+        ///
+        /// Constructs customWindow takes a vector as input which stores the colleges the user wants to visit
 
     explicit customwindow(QWidget *parent = nullptr, const vector<QString> &collegesVec = vector<QString>());
     ~customwindow();

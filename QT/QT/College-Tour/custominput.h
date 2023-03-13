@@ -10,13 +10,19 @@ namespace Ui {
 class custominput;
 }
 
+
+/// customInput
+///
+/// Gets the starting college and all the other
+/// colleges the user wants to visit on their custom trip
+
 class custominput : public QDialog
 {
     Q_OBJECT
 
 public:
 
-    /// holds the database for the program
+    /// Holds the database for the program
     QSqlDatabase db;
 
     /// Sets database
@@ -27,7 +33,10 @@ public:
     {
         // sets database path and name for the database variable
         db = QSqlDatabase::addDatabase("QSQLITE");
-        QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+        // Allen's db file path
+        QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+
 //        QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";   //Adam's db file path
         qInfo() << path;
         db.setDatabaseName(path);
@@ -58,11 +67,6 @@ public:
 
     explicit custominput(QWidget *parent = nullptr);
     ~custominput();
-
-
-
-
-
 
 
 private slots:

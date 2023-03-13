@@ -8,6 +8,12 @@
 using namespace std;
 
 
+
+/// TravelPlan class
+///
+/// Holds the functionality and the data used for the different
+/// travel plans
+
 class TravelPlan
 {
 

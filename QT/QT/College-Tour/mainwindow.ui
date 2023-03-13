@@ -100,7 +100,7 @@
      </font>
     </property>
     <property name="text">
-     <string>College Tour!</string>
+     <string>College Display</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

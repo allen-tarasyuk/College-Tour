@@ -62,10 +62,6 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
         q.exec(string);
 
 
-
-
-
-
         // Get first closest college from current college and add it to list
         while(q.next())
         {

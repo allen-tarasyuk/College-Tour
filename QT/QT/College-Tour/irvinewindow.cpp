@@ -64,7 +64,7 @@ try{
 
 
 }catch(const std::exception& e){
-     QMessageBox::critical(nullptr, "Error", "Please Enter More Colleges");
+     QMessageBox::critical(nullptr, "Error", e.what());
 
 }
 

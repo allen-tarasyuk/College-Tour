@@ -10,6 +10,11 @@ namespace Ui {
 class welcomeWindow;
 }
 
+/// TravelPlan class
+///
+/// Presents the user with option to display distances or souvenirs,
+/// select plans, or access adminstration pages
+
 class welcomeWindow : public QMainWindow
 {
     Q_OBJECT

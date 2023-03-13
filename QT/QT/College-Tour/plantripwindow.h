@@ -15,13 +15,18 @@ namespace Ui {
 class planTripWindow;
 }
 
+/// planTripWindow class
+///
+/// Holds the buttons to all the trip plans
+/// and sends the user to the specified plan they chose
+
 class planTripWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
 
-
+    /// Holds the database for the program
     QSqlDatabase db;
 
        /// Sets database
@@ -32,7 +37,11 @@ public:
        {
            // sets database path and name for the database variable
            db = QSqlDatabase::addDatabase("QSQLITE");
-         QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+           // Allen's db file path
+           QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+
+
            // QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";   //Adam's db file path
 
            qInfo() << path;
@@ -57,7 +66,18 @@ public:
            }
        }
 
+       /// Closes database
+       ///
+       /// Calls databse method to close database
+       void ConnClose() { db.close();}
 
+
+       /// Checks if new colleges were added
+       ///
+       /// Checks if the new colleges were added to be used in this
+       /// travel plan
+       /// @returns if colleges were added or not
+       bool CheckCollegesAdded();
 
 
     explicit planTripWindow(QWidget *parent = nullptr);

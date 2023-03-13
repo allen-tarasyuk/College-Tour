@@ -11,6 +11,11 @@ namespace Ui {
 class adminSelectWindow;
 }
 
+/// adminSelectWindow
+///
+/// Allows the admin to access the database and the option
+/// to alter the distances and souvenirs of different campuses
+
 class adminSelectWindow : public QMainWindow
 {
     Q_OBJECT
@@ -19,20 +24,32 @@ public:
     explicit adminSelectWindow(QWidget *parent = nullptr);
     ~adminSelectWindow();
 
+     /// Holds the database for the program
     QSqlDatabase db;
 
+
+      /// Sets database
+      ///
+      /// This method gets a path from the administrator and looks for the database
+      /// in that given path and sets the database variable to that database
     void SetDataBase()
     {
         // Sets database path and name for the database variable
         db = QSqlDatabase::addDatabase("QSQLITE");
-//        QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+        // Allen's db file path
+        QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
 
         //Adam's db file path
-        QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+//        QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
         qInfo() << path;
         db.setDatabaseName(path);
     }
 
+     /// Opens database
+     ///
+     /// Calls database method to open database and returns to console
+     /// if opened properly
     void ConnOpen()
     {
         // Opens database and outputs if it opened sucessfully
@@ -45,10 +62,18 @@ public:
         }
     }
 
+
+    /// Closes database
+    ///
+   /// Calls databse method to close database
     void ConnClose() {
         db.close();
     }
 
+
+    /// Add College
+    ///
+    /// Allows the admin to add a college from a file
     void addCollege(QTextStream& fileCollege);
 
 

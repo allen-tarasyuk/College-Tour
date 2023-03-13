@@ -87,3 +87,10 @@ void MainWindow::on_pushButton_clicked()
     tripWindow->show();
 }
 
+
+//void MainWindow::on_pushButton_2_clicked()
+//{
+//      // Refreshes database
+//       SetDataBase();
+//}
+

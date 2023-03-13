@@ -6,6 +6,9 @@ planTripWindow::planTripWindow(QWidget *parent) :
     ui(new Ui::planTripWindow)
 {
     ui->setupUi(this);
+
+      // sets database
+      SetDataBase();
 }
 
 planTripWindow::~planTripWindow()
@@ -62,4 +65,33 @@ irvinePlanWindow->show();
 this->close();
 
 }
+
+bool planTripWindow::CheckCollegesAdded()
+{
+    // checks if the new data was inserted
+    ConnOpen();
+    QSqlQuery q;
+    q.exec("SELECT DISTINCT Starting_College FROM Distances WHERE Starting_College = 'University of Texas' OR Starting_City = 'California State University, Fullerton'"); // SQL statement: means to output all values in the table
+    bool dataInserted = false;
+    while(q.next())
+    {
+        if(!(q.value(0).isNull()))
+        {
+            dataInserted = true;
+        }
+        else
+        {
+            dataInserted = false;
+        }
+
+    }
+
+    ConnClose();
+
+    return dataInserted;
+}
+
+
+
+
 

@@ -15,25 +15,43 @@ namespace Ui {
 class saddlebackTripWindow;
 }
 
+/// saddlebackTripWindow
+///
+/// Displays the initial saddleback trip plan
+
 class saddlebackTripWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
 
+    /// Holds the database for the program
     QSqlDatabase db;
+
+
+     /// Sets database
+     ///
+     /// This method gets a path from the administrator and looks for the database
+     /// in that given path and sets the database variable to that database
 
         void SetDataBase()
         {
             // sets database path and name for the database variable
             db = QSqlDatabase::addDatabase("QSQLITE");
-          QString path = "/Users/allentarasyuk/Desktop/College-Tour/College-Tour/DB/Colleges.db";
+
+            // Allen's db file path
+            QString path = "/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/Colleges.db";
+
            // QString path = "/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/Colleges.db";   //Adam's db file path
 
             qInfo() << path;
             db.setDatabaseName(path);
         }
 
+        /// Opens database
+        ///
+        /// Calls database method to open database and returns to console
+        /// if opened properly
 
         void ConnOpen()
         {
@@ -48,11 +66,20 @@ public:
             }
         }
 
+        /// Closes database
+        ///
+        /// Calls databse method to close database
 
         void ConnClose()
         {
          db.close();
         }
+
+        /// Display Receipt
+        ///
+        /// This method displays the receipt of the items
+        /// purchased at the current college
+
 
         void DisplayReceipt();
 

@@ -139,8 +139,20 @@ void adminSelectWindow::on_pushButton_schoolADD_clicked()
     QString schoolSelected = ui->comboBox_school->currentText();
 
     //Get file with the two new colleges.
+
+
+
     //REPLACE WITH THE FILE PATH FOR YOUR FILE     // QFile file("YOUR FILE PATH");
-    QFile file("/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
+
+    // Adam's Path
+//    QFile file("/Users/adamortiz/Desktop/collegeTour-git/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
+
+
+    // Allen's Path
+     QFile file("/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
+
+
+
 
 
     //This is for reading the selected college form the file
