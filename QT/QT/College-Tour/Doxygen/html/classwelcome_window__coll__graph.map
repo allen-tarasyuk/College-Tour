@@ -1,0 +1,18 @@
+<map id="welcomeWindow" name="welcomeWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="166,548,287,573"/>
+<area shape="rect" id="node2" title=" " alt="" coords="251,108,357,133"/>
+<area shape="rect" id="node3" href="$class_main_window.html" title=" " alt="" coords="223,460,321,485"/>
+<area shape="rect" id="node4" href="$classplan_trip_window.html" title=" " alt="" coords="351,372,465,397"/>
+<area shape="rect" id="node5" href="$classsaddleback_trip_window.html" title=" " alt="" coords="487,196,644,221"/>
+<area shape="rect" id="node10" href="$classirvinewindow.html" title=" " alt="" coords="361,196,458,221"/>
+<area shape="rect" id="node12" href="$classarizonawindow.html" title=" " alt="" coords="781,196,889,221"/>
+<area shape="rect" id="node14" href="$classcustomwindow.html" title=" " alt="" coords="1085,196,1195,221"/>
+<area shape="rect" id="node15" href="$classadmin_window.html" title=" " alt="" coords="129,284,233,309"/>
+<area shape="rect" id="node16" href="$classadmin_select_window.html" title=" " alt="" coords="43,196,184,221"/>
+<area shape="rect" id="node6" href="$class_travel_plan.html" title=" " alt="" coords="659,108,743,133"/>
+<area shape="rect" id="node7" href="$struct_travel_plan_1_1_receipt.html" title=" " alt="" coords="633,5,770,31"/>
+<area shape="rect" id="node8" href="$classsummarypage.html" title=" " alt="" coords="1127,108,1231,133"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1485,5,1555,31"/>
+<area shape="rect" id="node11" href="$classarizonainput.html" title=" " alt="" coords="789,284,881,309"/>
+<area shape="rect" id="node13" href="$classcustominput.html" title=" " alt="" coords="1093,284,1187,309"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,203,112,228"/>
+<area shape="rect" id="node2" href="$class_main_window.html" title=" " alt="" coords="190,5,287,31"/>
+<area shape="rect" id="node3" href="$classadmin_select_window.html" title=" " alt="" coords="168,55,309,80"/>
+<area shape="rect" id="node4" href="$classadmin_window.html" title=" " alt="" coords="187,104,291,129"/>
+<area shape="rect" id="node5" href="$classarizonawindow.html" title=" " alt="" coords="185,153,293,179"/>
+<area shape="rect" id="node6" href="$classcustomwindow.html" title=" " alt="" coords="184,203,293,228"/>
+<area shape="rect" id="node7" href="$classirvinewindow.html" title=" " alt="" coords="190,252,287,277"/>
+<area shape="rect" id="node8" href="$classplan_trip_window.html" title=" " alt="" coords="181,301,296,327"/>
+<area shape="rect" id="node9" href="$classsaddleback_trip_window.html" title=" " alt="" coords="160,351,317,376"/>
+<area shape="rect" id="node10" href="$classwelcome_window.html" title=" " alt="" coords="178,400,299,425"/>
+</map>

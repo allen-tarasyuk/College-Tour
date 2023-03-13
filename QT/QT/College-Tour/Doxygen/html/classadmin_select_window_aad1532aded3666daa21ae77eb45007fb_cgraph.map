@@ -1,0 +1,6 @@
+<map id="adminSelectWindow::on_pushButton_schoolADD_clicked" name="adminSelectWindow::on_pushButton_schoolADD_clicked">
+<area shape="rect" id="node1" title=" " alt="" coords="5,30,188,85"/>
+<area shape="rect" id="node2" href="$classadmin_select_window.html#ae53518eb65bbb96595f02ff0c31c8361" title=" " alt="" coords="236,37,385,77"/>
+<area shape="rect" id="node3" href="$classadmin_select_window.html#a51b9b3ee88d6ddbe12814635209838b8" title="Calls databse method to close database." alt="" coords="433,5,583,45"/>
+<area shape="rect" id="node4" href="$classadmin_select_window.html#abfd6810d934c3a13fc1f43c8d0cfc198" title=" " alt="" coords="433,69,583,109"/>
+</map>
