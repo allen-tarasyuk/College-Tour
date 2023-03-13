@@ -70,6 +70,7 @@
     <font>
      <pointsize>14</pointsize>
      <bold>true</bold>
+     <underline>false</underline>
     </font>
    </property>
    <property name="text">
@@ -89,6 +90,7 @@
     <font>
      <pointsize>14</pointsize>
      <bold>true</bold>
+     <underline>false</underline>
     </font>
    </property>
    <property name="text">
@@ -114,6 +116,9 @@
      <height>32</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="text">
     <string>OK</string>
    </property>
@@ -127,6 +132,9 @@
      <height>32</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="text">
     <string>Cancel</string>
    </property>
@@ -139,6 +147,9 @@
      <width>111</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="text">
     <string>Add College</string>

@@ -71,7 +71,7 @@ bool planTripWindow::CheckCollegesAdded()
     // checks if the new data was inserted
     ConnOpen();
     QSqlQuery q;
-    q.exec("SELECT DISTINCT Starting_College FROM Distances WHERE Starting_College = 'University of Texas' OR Starting_City = 'California State University, Fullerton'"); // SQL statement: means to output all values in the table
+    q.exec("SELECT DISTINCT Starting_College FROM Distances WHERE Starting_College = 'University of Texas' OR Starting_College = 'California State University, Fullerton'"); // SQL statement: means to output all values in the table
     bool dataInserted = false;
     while(q.next())
     {
@@ -94,4 +94,12 @@ bool planTripWindow::CheckCollegesAdded()
 
 
 
+
+
+//void planTripWindow::on_pushButton_5_clicked()
+//{
+//    // Refreshes database
+//    SetDataBase();
+
+//}
 

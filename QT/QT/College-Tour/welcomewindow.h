@@ -30,6 +30,8 @@ private slots:
 
     void on_pushButton_3_clicked(); //Admin pushButton
 
+    void on_pushButton_5_clicked();
+
 private:
     Ui::welcomeWindow *ui;
     MainWindow *display;

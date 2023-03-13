@@ -68,7 +68,7 @@ public:
 
         /// Closes database
         ///
-        /// Calls databse method to close database
+        /// Calls database method to close database
 
         void ConnClose()
         {

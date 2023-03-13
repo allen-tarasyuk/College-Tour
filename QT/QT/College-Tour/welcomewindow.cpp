@@ -34,3 +34,9 @@ void welcomeWindow::on_pushButton_3_clicked()
     adminLogin->show();
 }
 
+
+void welcomeWindow::on_pushButton_5_clicked()
+{
+    qApp->exit();
+}
+

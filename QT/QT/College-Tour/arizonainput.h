@@ -12,7 +12,7 @@ class arizonainput;
 /// arizonaInput class
 ///
 /// Gets the number of colleges the user wants to visit
-/// in the Paris plan
+/// in the Arizona plan
 
 class arizonainput : public QDialog
 {
