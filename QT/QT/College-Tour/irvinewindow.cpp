@@ -181,18 +181,57 @@ void irvinewindow::on_pushButton_2_clicked()
 
 
 
+//void irvinewindow::DisplayReceipt()
+//{
+//    // Displays the total cost of items purchased from the current college
+//    QString receipt = "";
+//    for(int i = 0; i < irvine->collegeReceipt.costOfItems.size(); i++)
+//    {
+//        receipt += irvine->collegeReceipt.itemsBought[i] + ": $" + QString::number(irvine->collegeReceipt.costOfItems[i]) + "\n";
+//    }
+
+//    receipt += "\n\n---------------------------\nTotal cost: $" + QString::number(irvine->collegeReceipt.cost);
+
+//    ui->textBrowser_2->setText(receipt);
+//}
+
+
+
 void irvinewindow::DisplayReceipt()
 {
     // Displays the total cost of items purchased from the current college
     QString receipt = "";
-    for(int i = 0; i < irvine->collegeReceipt.costOfItems.size(); i++)
+    QList<QString> items;
+    QHash<QString, double> itemCosts;
+    QHash<QString, int> itemCounts;
+
+    for(int i = 0; i < irvine->collegeReceipt.itemsBought.size(); i++)
     {
-        receipt += irvine->collegeReceipt.itemsBought[i] + ": $" + QString::number(irvine->collegeReceipt.costOfItems[i]) + "\n";
+        QString item = irvine->collegeReceipt.itemsBought[i];
+        double cost = irvine->collegeReceipt.costOfItems[i];
+        if (!itemCosts.contains(item)) {
+            itemCosts.insert(item, cost);
+            itemCounts.insert(item, 1);
+            items.append(item);
+        } else {
+            itemCosts[item] += cost;
+            itemCounts[item]++;
+        }
+    }
+
+    for (int i = 0; i < items.size(); i++) {
+        QString itemName = items.at(i);
+        double cost = itemCosts[itemName];
+        int count = itemCounts[itemName];
+        QString itemString = itemName + (count > 1 ? " (x" + QString::number(count) + ")" : "");
+        receipt += itemString + ": $" + QString::number(cost) + "\n";
     }
 
     receipt += "\n\n---------------------------\nTotal cost: $" + QString::number(irvine->collegeReceipt.cost);
 
     ui->textBrowser_2->setText(receipt);
 }
+
+
 
 

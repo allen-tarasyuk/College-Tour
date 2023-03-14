@@ -161,18 +161,69 @@ void saddlebackTripWindow::on_pushButton_2_clicked()
 
 
 
+//void saddlebackTripWindow::DisplayReceipt()
+//{
+//    // Displays the total cost of items purchased from the current college
+//    QString receipt = "";
+
+
+//    for(int i = 0; i < saddleback->collegeReceipt.costOfItems.size(); i++)
+//    {
+//        receipt += saddleback->collegeReceipt.itemsBought[i] + ": $" + QString::number(saddleback->collegeReceipt.costOfItems[i]) + "\n";
+//    }
+
+//    receipt += "\n\n---------------------------\nTotal cost: $" + QString::number(saddleback->collegeReceipt.cost);
+
+//    ui->textBrowser_2->setText(receipt);
+//}
+
+
 void saddlebackTripWindow::DisplayReceipt()
 {
     // Displays the total cost of items purchased from the current college
     QString receipt = "";
-    for(int i = 0; i < saddleback->collegeReceipt.costOfItems.size(); i++)
+    QList<QString> items;
+    QHash<QString, double> itemCosts;
+    QHash<QString, int> itemCounts;
+
+    for(int i = 0; i < saddleback->collegeReceipt.itemsBought.size(); i++)
     {
-        receipt += saddleback->collegeReceipt.itemsBought[i] + ": $" + QString::number(saddleback->collegeReceipt.costOfItems[i]) + "\n";
+        QString item = saddleback->collegeReceipt.itemsBought[i];
+        double cost = saddleback->collegeReceipt.costOfItems[i];
+        if (!itemCosts.contains(item)) {
+            itemCosts.insert(item, cost);
+            itemCounts.insert(item, 1);
+            items.append(item);
+        } else {
+            itemCosts[item] += cost;
+            itemCounts[item]++;
+        }
+    }
+
+    for (int i = 0; i < items.size(); i++) {
+        QString itemName = items.at(i);
+        double cost = itemCosts[itemName];
+        int count = itemCounts[itemName];
+        QString itemString = itemName + (count > 1 ? " (x" + QString::number(count) + ")" : "");
+        receipt += itemString + ": $" + QString::number(cost) + "\n";
     }
 
     receipt += "\n\n---------------------------\nTotal cost: $" + QString::number(saddleback->collegeReceipt.cost);
 
     ui->textBrowser_2->setText(receipt);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

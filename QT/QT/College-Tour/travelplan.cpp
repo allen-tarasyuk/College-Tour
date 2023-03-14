@@ -27,7 +27,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
         QString string;
 
         // If the Saddleback plan or Custom plan execute a different sql statement
-        if(saddleback || custom )
+        if(saddleback || custom)
         {
             // If custom add each college the user wants to visit into the sql statement
             if(custom)
