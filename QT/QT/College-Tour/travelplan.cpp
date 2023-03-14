@@ -27,7 +27,7 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
         QString string;
 
         // If the Saddleback plan or Custom plan execute a different sql statement
-        if(saddleback || custom)
+        if(saddleback || custom )
         {
             // If custom add each college the user wants to visit into the sql statement
             if(custom)
@@ -45,8 +45,13 @@ void TravelPlan::FindClosestCollege(const QString& college, std::vector<QString>
             else
             {
                 // If Saddleback excluded the added college from the sql statement
-                string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\'"
-                        + "AND NOT ENDING_COLLEGE = 'California State University, Fullerton' AND NOT ENDING_COLLEGE = 'University of Texas' ORDER BY Distance ASC";
+//                string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\'"
+//                        + "AND NOT ENDING_COLLEGE = 'California State University, Fullerton' AND NOT ENDING_COLLEGE = 'University of Texas' ORDER BY Distance ASC";
+
+                                string = "SELECT DISTINCT Ending_College FROM Distances WHERE Starting_College = \'" + college + "\'"
+                                        + "AND NOT ENDING_COLLEGE = 'University of Texas' AND NOT ENDING_COLLEGE = 'California State University, Fullerton' ORDER BY Distance ASC";
+
+
             }
 
             qDebug() << string;

@@ -88,9 +88,25 @@ void MainWindow::on_pushButton_clicked()
 }
 
 
-//void MainWindow::on_pushButton_2_clicked()
-//{
-//      // Refreshes database
-//       SetDataBase();
-//}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+      ConnOpen();
+      QSqlQuery q;
+      q.exec("SELECT Starting_College, Distance FROM Distances WHERE Ending_College = 'Saddleback College'");
+
+      QString data = "";
+      while(q.next())
+      {
+          QString college = q.value(0).toString();
+          QString distance = q.value(1).toString();
+          data += "Distance from " + college + " to Saddleback College is " + distance + " km\n\n\n";
+      }
+      ui->textEdit_2->setText(data);
+
+      ConnClose();
+
+
+}
 

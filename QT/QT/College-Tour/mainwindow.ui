@@ -23,8 +23,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>100</y>
+      <x>370</x>
+      <y>70</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -43,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>320</y>
+      <y>290</y>
       <width>241</width>
       <height>21</height>
      </rect>
@@ -62,7 +62,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>120</y>
+      <y>90</y>
       <width>361</width>
       <height>32</height>
      </rect>
@@ -110,7 +110,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>160</y>
+      <y>130</y>
       <width>281</width>
       <height>131</height>
      </rect>
@@ -153,6 +153,19 @@
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>320</y>
+      <width>181</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display All</string>
     </property>
    </widget>
   </widget>
