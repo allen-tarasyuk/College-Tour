@@ -65,10 +65,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>200</y>
-      <width>71</width>
-      <height>21</height>
+      <x>140</x>
+      <y>190</y>
+      <width>251</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -79,16 +79,16 @@
      </font>
     </property>
     <property name="text">
-     <string>Menu</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Menu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>200</y>
-      <width>81</width>
-      <height>21</height>
+      <x>430</x>
+      <y>190</y>
+      <width>251</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -99,7 +99,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Receipt</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Receipt&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -110,6 +110,12 @@
       <width>100</width>
       <height>32</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -127,6 +133,12 @@
       <height>32</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -142,6 +154,12 @@
       <width>100</width>
       <height>32</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -179,9 +197,9 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>310</x>
       <y>120</y>
-      <width>171</width>
+      <width>221</width>
       <height>16</height>
      </rect>
     </property>
@@ -202,7 +220,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>36</height>
     </rect>
    </property>
   </widget>

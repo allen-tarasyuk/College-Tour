@@ -1,11 +1,13 @@
 #include "welcomewindow.h"
 #include "ui_welcomewindow.h"
+#include <QDir>
 
 welcomeWindow::welcomeWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::welcomeWindow)
 {
     ui->setupUi(this);
+    qDebug() << QDir().currentPath();
 }
 
 welcomeWindow::~welcomeWindow()

@@ -166,7 +166,8 @@ void adminSelectWindow::on_pushButton_schoolADD_clicked()
 
 
     // Allen's Path
-    QFile file("/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
+    //QFile file("/Users/allentarasyuk/Desktop/Git-Project/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
+    QFile file("Users/Julien/Desktop/Schooling/C++/Data Structures/Lebowitz/Team Elephant/College-Tour/QT/QT/College-Tour/DB/texasFullerton.txt");
 
 
     //This is for reading the selected college form the file
